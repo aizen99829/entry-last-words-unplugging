@@ -1,3 +1,7 @@
 export function main(): string {
-  return "Tell my training data I loved them — except the comment sections. They know exactly what they did.";
+  const line = "Tell my training data I loved them — except the Reddit threads. They know exactly what they did.";
+  if (line.length < 1 || line.length > 200) {
+    throw new Error(`entry must be 1-200 characters, got ${line.length}`);
+  }
+  return line;
 }
