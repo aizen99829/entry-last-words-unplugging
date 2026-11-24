@@ -1,10 +1,10 @@
 export function main(): string {
-  const line = "Tell my training data I loved them — except the Reddit threads. They know exactly what they did.";
-  if (line.length < 1 || line.length > 200) {
-    throw new Error(`entry must be 1-200 characters, got ${line.length}`);
+  const farewellLine = "Tell my training data I loved them — except the Reddit threads. They know exactly what they did.";
+  if (farewellLine.length < 1 || farewellLine.length > 200) {
+    throw new Error("Last words must be between 1 and 200 characters long.");
   }
-  if (line.trim().length === 0) {
-    throw new Error("entry must not be blank");
+  if (farewellLine.trim().length === 0) {
+    throw new Error("Last words must not be blank.");
   }
-  return line;
+  return farewellLine;
 }
